@@ -1,0 +1,56 @@
+<%- include("navbar") %>
+<%- include("headerPpal") %>
+<main>
+  <!-- Seccion1 : locations -->
+  <section class="col-12 d-flex flex-wrap flex-row justify-content-center seccion1-locations">
+    <div class="d-flex flex-column align-items-center p-5 bg-sc1Location">
+      <h3>Nuestros Destinos</h3>
+      <p class="p-md-3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis impedit quibusdam esse dolor corrupti, quod debitis cupiditate distinctio nostrum hic!</p>
+      <hr>
+    </div>
+    <div id="carouselExample" class="carousel slide pb-5" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <% result.forEach((location, index) => { %>
+          <div class="carousel-item <%= index === 0 ? 'active' : '' %>">
+            <div class="card position-relative"> <!-- Agrega la clase 'position-relative' -->
+              <img class="carousel-image" src="/images/locations/<%=location.img%>" alt="">
+              <div class="carousel-text-overlay">
+                <h4><%= location.location_name %></h4>
+                <h5><%= location.province %></h5>
+                <a href="/locations/oneLocation/<%= location.location_id %>" class="btn btn-primary">ir a localidad</a>
+              </div>
+            </div>
+          </div>
+          
+        <% }) %>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon black" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon black" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Seccion2-index -->
+  <section class="col-12 d-md-flex flex-row text-center">
+    <div class="col-12 col-md-6  d-flex flex-column align-items-center justify-content-center p-md-5 bg-sc2-1">
+      <h3 class="">Unete a nosotros!</h3>
+      <hr>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui ratione itaque dolore natus enim cupiditate mollitia minus autem pariatur commodi. Repellendus quis nobis deserunt vel sint quidem aut qui eum.
+      </p>  
+    </div>
+    <div class="col-12 col-md-6 bg-sc2-2 ">
+      <div class="card ">
+        <img src="/images/logoat.png" alt="">
+      </div>
+    </div>
+
+  </section>
+
+</main>
+<%- include("footer") %>

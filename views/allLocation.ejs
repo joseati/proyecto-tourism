@@ -1,0 +1,39 @@
+<%- include("navbar") %>
+<%- include("headerlocations") %>
+
+<main class="col-12 py-5 mainLocation">
+  <hr class="hr">
+  <% result.forEach(location =>{ %>
+    <div class="py-5">
+    <div class="card " style="background-image: url(/images/locations/<%=location.img%>);">
+      
+      <div class="text text-center ">
+        
+    
+        
+        <h4>
+          <span class=" text-center locationName"><%= location.location_name %></span> 
+          <br>
+          Se encuentra ubicado en la provincia de <span><%= location.province %>. </span>
+          <br>
+          <span><%= location.comment %></span> 
+        </h4>
+     
+        <div class="text-info">
+          <h4>Informacion de contacto</h4>
+          <h4><%= location.address %></h4>
+          <h4><%= location.email %></h4>
+          <h4><%= location.telephone_number %></h4>
+        </div>
+      </div>
+      <a class="btn btn-primary" href="/locations/oneLocation/<%= location.location_id %>"> Ver sus lugares de interes</a>
+    
+    </div>
+  
+    
+  </div> 
+     <% }) %>
+  <hr class="hr">
+</main>
+</body>
+<%- include("footer") %>

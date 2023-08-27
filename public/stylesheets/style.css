@@ -1,0 +1,211 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 36px;
+  color: #8f7046;
+  text-shadow: -2px -2px 0 #603f23, 2px 2px 0 #603f23, -2px 2px 0 #603f23, 2px -2px 0 #603f23;
+}
+
+h3, .card-text {
+  color: #877458;
+  font-size: 40px;
+  opacity: 1;
+}
+
+h4 {
+  color: #EBDECC;
+  font-size: 25px;
+}
+
+.hr {
+  margin-left: calc(50% - 240px);
+}
+
+hr {
+  width: 30%;
+  height: 8px;
+  background-color: #cdbdae;
+  opacity: 1;
+}
+
+h2 {
+  color: #603f23;
+  text-shadow: -1px -1px 0 #603f23, 1px 1px 0 #603f23, -1px 1px 0 #603f23, 1px -1px 0 #603f23;
+}
+
+.p {
+  color: #EBDECC;
+  font-size: large;
+  border-color: #603f23 !important;
+}
+
+.btn-primary {
+  background-color: rgba(188, 100, 18, 0.6);
+  z-index: 1;
+}
+
+.btn {
+  border: #231f1a;
+}
+
+.bg-nav {
+  background-color: #8f7046 !important;
+}
+.bg-nav a {
+  color: #EBDECC;
+}
+.bg-nav .logo-ppl {
+  filter: invert(1);
+  color: antiquewhite;
+}
+
+.header-ppal {
+  background-image: url("/images/bg-ppal.jpeg");
+  background-position: center;
+  background-size: cover;
+  padding: 10vw;
+  filter: opacity(0.93) sepia(0.3);
+}
+.header-ppal .slogan-ppal {
+  padding: 4rem;
+  background-color: rgba(188, 222, 227, 0.9882352941);
+  filter: opacity(0.7);
+  border-radius: 10%;
+}
+.header-ppal .slogan-ppal p, .header-ppal .slogan-ppal h1 {
+  margin: 7px;
+  opacity: 1;
+  color: #8f7046;
+  font-family: "ADLaM Display", cursive;
+}
+
+.header-locations {
+  background-image: url("/images/bg-locations.jpeg");
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+}
+.header-locations .bg-black1 {
+  background-color: rgba(62, 62, 62, 0.284);
+  width: 100%;
+  height: 100%;
+  padding: 10vh;
+}
+.header-locations .slogan-locations {
+  border: solid 1px #8f7046;
+  background-color: rgba(220, 130, 46, 0.14);
+  padding: 5rem 3rem;
+  border-radius: 10%;
+}
+@media screen and (max-width: 770px) {
+  .header-locations .bg-black1 {
+    padding: 10vh;
+  }
+  .header-locations .slogan-locations {
+    padding: 5vh 2vh;
+  }
+}
+
+.seccion1-locations {
+  font-family: "Open Sans", sans-serif;
+  padding: 0 0 10vh 0;
+}
+.seccion1-locations .carousel-image {
+  width: 100%;
+  height: 400px; /* Ajusta la altura según necesites */
+  -o-object-fit: cover;
+     object-fit: cover; /* Mantiene la proporción y cubre el contenedor */
+}
+.seccion1-locations .carousel-text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.seccion1-locations .carousel-text-overlay {
+  margin: 5px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.bg-sc1Location {
+  background-color: rgba(205, 189, 174, 0.25);
+  width: 100%;
+  margin: 0 0 10vh 0;
+}
+
+.bg-sc2-1 {
+  background-color: rgba(205, 189, 174, 0.25);
+}
+
+.bg-sc2-2 {
+  background-color: rgba(205, 189, 174, 0.6);
+  padding: 10rem 5rem;
+}
+.bg-sc2-2 img {
+  height: 20%;
+}
+
+.mainLocation {
+  background-color: rgba(220, 130, 46, 0.14);
+}
+
+.card {
+  background-position: 50%;
+  background-size: cover;
+}
+.card .text {
+  background-color: rgba(27, 25, 23, 0.5);
+  padding: 15rem !important;
+}
+.card .text .locationName {
+  color: #EBDECC;
+  font-size: 50px;
+  padding: 10rem 0 !important;
+}
+@media screen and (max-width: 770px) {
+  .card .text {
+    padding: 3rem !important;
+  }
+}
+
+.header-onelocation {
+  background-position: center;
+  background-size: cover;
+  padding: 30vh 0;
+  background-repeat: no-repeat;
+}
+
+.name-loc {
+  color: #EBDECC;
+  font-size: 70px;
+}
+
+.places {
+  background-color: rgba(205, 189, 174, 0.25);
+}
+
+.bg-sc2 {
+  background-color: rgba(205, 189, 174, 0.6);
+}
+
+.card-img-top {
+  height: 70%;
+}/*# sourceMappingURL=style.css.map */

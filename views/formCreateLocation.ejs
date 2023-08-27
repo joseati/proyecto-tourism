@@ -1,0 +1,64 @@
+<%- include("navbar") %>
+<%- include("headerPpal") %>
+
+<main class="row">
+  <div class="col-12">
+    <form 
+    action="/locations/createLocation"
+    method="post"
+    enctype="multipart/form-data"
+    class="form d-flex flex-column p-5">
+    
+      <label for="location_name">Nombre de la localidad 
+      </label>
+       <input 
+       type="text"
+       name="location_name"
+       id="location_name">
+
+     <label for="province">Provincia </label>
+      <input 
+     type="text" 
+      name="province" 
+      id="province">
+    
+      <label for="email">email </label>
+      <input 
+      type="text" 
+      name="email" 
+      id="email">
+   
+      <labe for="comment">Descripcion  <span>(Opcional)</span> </label>
+      <input 
+      type="text" 
+      name="comment" 
+      id="comment">
+ 
+      <label for="telephone_number">telephone </label>
+     <input 
+      type="text" 
+      name="telephone_number" 
+      id="telephone_number">
+  
+      <label for="password">Contraseña </label>
+      <input 
+      type="text" 
+      name="password" 
+      id="password">
+
+      <label for="file">Imagen</label>
+      <input type="file"
+      name="file"
+      id="img">
+
+    <button class="btn btn-primary " type="submit">Enviar</button>
+
+    </form>
+    <br>
+    <span style="color:red"><%= typeof message != "undefined" ? message : null %></span>
+  </div>
+
+</main>
+</body>
+
+<%- include("footer") %>
