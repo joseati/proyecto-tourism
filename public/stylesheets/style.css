@@ -5,6 +5,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  text-decoration: none;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -208,4 +209,11 @@ h2 {
 
 .card-img-top {
   height: 70%;
+}
+
+.onePlace {
+  padding: 10rem 5rem;
+}
+.onePlace .card-onePlace {
+  padding: 1rem;
 }/*# sourceMappingURL=style.css.map */

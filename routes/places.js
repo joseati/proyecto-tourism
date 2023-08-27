@@ -19,5 +19,8 @@ router.get("/formEditPlace/:place_id", placeController.formEditArtist )
 // http://localhost:3000/places/editPlace/:place_id
 router.post("/editPlace/:place_id", placeController.editPlace)
 
+// Ruta para mostrar un lugar
+// http://localhost:3000/places/onePlace/:place_id
+router.get("/onePlace/:place_id", placeController.showOnePlace)
 
 module.exports = router

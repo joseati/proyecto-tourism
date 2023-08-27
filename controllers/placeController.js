@@ -79,6 +79,21 @@ class placeController{
     
 
   }
+
+  showOnePlace =(req,res) =>{
+    let {place_id} = req.params
+    let sql = `SELECT p.*, l.img FROM place p JOIN 
+    location l ON p.location_id = l.location_id 
+    WHERE 
+    p.place_id = ${place_id}`
+    console.log("req.paramssoneplaceee...", req.params)
+
+    connection.query(sql,(err,result)=>{
+      if(err) throw err;
+      console.log("resultadossssssoneplace...", result)
+      res.render("onePlace", {result})
+    })
+  }
 }
 
 module.exports = new placeController()

@@ -6,7 +6,8 @@ style="background-image: url(/images/locations/<%=result[0].img%>);">
   <div class="bg-black1">
     <div class="col-12 col-md-6 offset-md-3 col-xl-4 offset-xl-4 d-flex flex-column justify-content-center align-items-center slogan-locations ">
       <div class="text-center">
-       <h1 class="name-loc"><%= result[0].location_name %></h1> 
+       <h1 class="name-loc"><%= result[0].location_name %></h1>
+       <h2><%= result[0].address %></h2> 
   
       </div>
     </div>
@@ -30,9 +31,10 @@ style="background-image: url(/images/locations/<%=result[0].img%>);">
       <div class="card" style="width: 18rem;">
         <img src="/images/places/<%= place.img_place %>" class="card-img-top" alt="...">
         <div class="card-body text-center bg-sc2">
-          <p class="card-text"> <%= place.place_name%></p>
+          <a href="/places/onePlace/<%= place.place_id %>" style="text-decoration: none;"><p class="card-text" type="text/html" > <%= place.place_name%></p></a>
           <a href="/places/delLogicPlace/<%= place.place_id %>" class="btn btn-primary" type="button">Borrar lugar</a>
         <a href="/places/formEditPlace/<%= place.place_id %>" class="btn btn-primary" type="button">Editar lugar</a>
+       
         </div>
         
       </div>
@@ -46,7 +48,7 @@ style="background-image: url(/images/locations/<%=result[0].img%>);">
       
 </Section>
 <!-- Seccion 3 : Formulario -->
-  <div class="col-12 ">
+  <div class="col-12  ">
     <nav class="navbar navbar-dark  ">
       <div class="container-fluid d-flex justify-content-center text-center">
         <a class="navbar-brand" href="/">

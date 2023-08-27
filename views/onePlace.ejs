@@ -1,0 +1,19 @@
+<%- include("navbar") %>
+<main class="row">
+<section 
+class="col-12 d-flex flex-column justify-content-center align-items-center onePlace" 
+style="background-image: url(/images/locations/<%=result[0].img%>);">
+  
+  <div class="card " style="width: 18rem;">
+    <img src="/images/places/<%= result[0].img_place %>" class="card-img-top card-onePlace" alt="...">
+    <div class="card-body">
+      <h4 class="card-text"><%= result[0].place_name%></h4>
+    </div>
+  </div>
+
+
+</section>
+
+
+</main>
+<%- include("footer") %>

@@ -9,6 +9,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  text-decoration: none;
   font-family: 'Open Sans', sans-serif;
 }
 h1 {
@@ -229,5 +230,15 @@ h2{
 .card-img-top{
   height: 70%;
 }
+
+// VIEW ONEPLACE
+.onePlace{
+  padding: 10rem 5rem;
+  .card-onePlace{
+  padding: 1rem;
+  }
+}
+
+
 
 // viev footer
