@@ -212,8 +212,76 @@ h2 {
 }
 
 .onePlace {
-  padding: 10rem 5rem;
+  background-color: rgba(251, 251, 251, 0.769) !important;
 }
-.onePlace .card-onePlace {
-  padding: 1rem;
+.onePlace .bg-black3 {
+  background-color: rgba(167, 108, 36, 0.408) !important;
+  border-radius: 10%;
+  padding: 2rem;
+}
+
+.imgppal {
+  width: 100%;
+  border-radius: 10%;
+}
+.imgppal img {
+  border-radius: 10%;
+  width: 40rem;
+  height: 40rem;
+}
+
+@media screen and (max-width: 770px) {
+  .onePlace .bg-black3 {
+    background-color: rgba(167, 108, 36, 0.408) !important;
+    border-radius: 10%;
+    padding: 2rem;
+  }
+}
+.card-onePlace {
+  padding: 2rem;
+}
+
+.formLocation {
+  padding: 5rem 15rem;
+}
+.formLocation .form-loc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(173, 144, 110, 0.335);
+  border-radius: 5%;
+  width: calc(50% - 20px);
+  border: solid 1px rgb(208, 124, 51);
+}
+.formLocation .form-loc .label {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+@media screen and (max-width: 970px) {
+  .formLocation .formLocation {
+    padding: 0;
+  }
+  .formLocation .form-loc {
+    background-color: rgba(255, 255, 255, 0.335);
+    border-color: aliceblue;
+    width: 100%;
+  }
+  .formLocation label {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+  }
+  .formLocation .btn-form {
+    width: 100%;
+  }
+}
+
+label {
+  width: 20vw;
+}
+
+.btn-form {
+  width: 50%;
 }/*# sourceMappingURL=style.css.map */

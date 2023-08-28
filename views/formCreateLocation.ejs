@@ -1,57 +1,71 @@
 <%- include("navbar") %>
-<%- include("headerPpal") %>
+<%- include("headerForm") %>
 
 <main class="row">
-  <div class="col-12">
+  <div class="col-12 col-xl-10 offset-xl-2 align-items-center formLocation">
     <form 
     action="/locations/createLocation"
     method="post"
     enctype="multipart/form-data"
-    class="form d-flex flex-column p-5">
+    class="form-loc p-md-5">
     
-      <label for="location_name">Nombre de la localidad 
-      </label>
-       <input 
+      <div class="label ">
+        <label for="location_name">Nombre de la localidad
+        </label>
+         <input
+         type="text"
+         name="location_name"
+         id="location_name">
+      </div>
+
+     <div class="label">
+       <label for="province">Provincia </label>
+        <input
        type="text"
-       name="location_name"
-       id="location_name">
-
-     <label for="province">Provincia </label>
-      <input 
-     type="text" 
-      name="province" 
-      id="province">
+        name="province"
+        id="province">
+     </div>
     
-      <label for="email">email </label>
-      <input 
-      type="text" 
-      name="email" 
-      id="email">
+      <div class="label">
+        <label for="email">email </label>
+        <input
+        type="text"
+        name="email"
+        id="email">
+      </div>
    
-      <labe for="comment">Descripcion  <span>(Opcional)</span> </label>
-      <input 
-      type="text" 
-      name="comment" 
-      id="comment">
+      <div class="label">
+        <label for="comment">Descripcion (Opcional) </label>
+        <input
+        type="text"
+        name="comment"
+        id="comment">
+      </div>
  
-      <label for="telephone_number">telephone </label>
-     <input 
-      type="text" 
-      name="telephone_number" 
-      id="telephone_number">
+      <div class="label">
+        <label for="telephone_number">telephone </label>
+             <input
+        type="text"
+        name="telephone_number"
+        id="telephone_number">
+      </div>
   
-      <label for="password">Contraseña </label>
-      <input 
-      type="text" 
-      name="password" 
-      id="password">
+      <div class="label">
+        <label for="password">Contraseña </label>
+        <input
+        type="text"
+        name="password"
+        id="password">
+      </div>
 
-      <label for="file">Imagen</label>
-      <input type="file"
-      name="file"
-      id="img">
+      <div class="label">
+        <label for="file">Imagen</label>
+        <input type="file"
+        name="file"
+        id="img">
+      </div>
 
-    <button class="btn btn-primary " type="submit">Enviar</button>
+    <button class="btn btn-primary btn-form " type="submit">Enviar</button>
 
     </form>
     <br>

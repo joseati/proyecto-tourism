@@ -1,13 +1,19 @@
 <%- include("navbar") %>
-<main class="row">
+<main>
 <section 
-class="col-12 d-flex flex-column justify-content-center align-items-center onePlace" 
-style="background-image: url(/images/locations/<%=result[0].img%>);">
+class="col-4 col-md-12 p-0 d-flex flex-column justify-content-center align-items-center onePlace" 
+>
   
-  <div class="card " style="width: 18rem;">
-    <img src="/images/places/<%= result[0].img_place %>" class="card-img-top card-onePlace" alt="...">
-    <div class="card-body">
-      <h4 class="card-text"><%= result[0].place_name%></h4>
+  <div class=" ">
+    <div class=" d-md-flex justify-content-center align-items-center imgppal" style="width: 18rem;">
+      <div class="imgplace">
+        <img src="/images/places/<%= result[0].img_place %>" class="rounded card-onePlace" alt="...">
+      </div>
+      <div class="card-body bg-black3">
+        <h4 class="card-text  "><%= result[0].place_name%></h4>
+        <br>
+        <h3><%= result[0].address %></h3>
+      </div>
     </div>
   </div>
 

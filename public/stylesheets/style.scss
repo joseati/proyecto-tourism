@@ -233,12 +233,103 @@ h2{
 
 // VIEW ONEPLACE
 .onePlace{
-  padding: 10rem 5rem;
-  .card-onePlace{
-  padding: 1rem;
+
+  // style="background-image: url(/images/locations/<%=result[0].img%>); ;"
+  background-color: rgba(251, 251, 251, 0.769) !important;
+
+  
+  
+  .bg-black3{
+    background-color: rgba(167, 108, 36, 0.408) !important;
+    border-radius: 10%;
+    padding: 2rem;
+   
+  }
+
+ 
+
+}
+.imgppal{
+  width: 100%;
+  border-radius: 10%;  
+  img{
+    
+    border-radius: 10%;
+  
+    width: 40rem;
+    height: 40rem;
+   
+   }  
+ }
+ @media screen and (max-width: 770px) {
+
+  .onePlace{
+
+    
+    
+    .bg-black3{
+      background-color: rgba(167, 108, 36, 0.408) !important;
+      border-radius: 10%;
+      padding: 2rem;
+    }
   }
 }
 
+ .card-onePlace{
+  padding: 2rem;
+  
+  }
 
+  // VIEW FORMCREATELOCATION
+  .formLocation{
+    padding:5rem  15rem;
+   
+    .form-loc{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: rgba(173, 144, 110, 0.335);
+      border-radius: 5%;
+      width:calc(50% - 20px);
+      
+      border: solid 1px rgb(208, 124, 51);;
+      .label{
+        padding: 1rem 0;
+        display: flex;
+        flex-direction: row;
+        
+        align-items: center;
+      }
+      
+    }
+    @media screen and (max-width: 970px){
+      .formLocation{
+        padding:0
+   }    
+      .form-loc{
+       
+        background-color: rgba(255, 255, 255, 0.335);
+        border-color: aliceblue;
+        width:100%
+        
+      }
+      label{
+        display: flex;
+        flex-direction: row;
+        padding: 1rem;
+       
+      }
+      .btn-form{
+        width: 100%;
+      }
+    }
+  }
+
+  label{
+    width: 20vw;
+  }
+  .btn-form{
+    width: 50%;
+  }
 
 // viev footer
